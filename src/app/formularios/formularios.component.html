@@ -1,0 +1,10 @@
+<p>formularios works!</p>
+<form [formGroup]="form">
+    <div>
+        <input type="text" placeholder="name" formControlName="name">
+        <input type="checkbox" formControlName="isChecked">
+        <pre>
+            <code> {{form.get('name')?.value | json}} </code>
+        </pre>
+    </div>
+</form>

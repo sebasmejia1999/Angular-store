@@ -1,0 +1,8 @@
+<h1>Pipes</h1>
+<p>My name is {{name | uppercase}}</p>
+<!-- Angular posee por defecto una serie de pipes que uno puede utilizar sin necesidad de crearlos.  -->
+<p>My last Name is {{lastName | lowercase}}</p>
+<hr>
+<p>El estado de su cuenta es: {{estado | estados}}</p>
+<button (click)="changeState()"> Change State</button> 
+<!-- poner codigo js en el HTML puede generar errores de performance -->

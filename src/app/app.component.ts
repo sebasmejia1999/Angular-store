@@ -11,6 +11,10 @@ export class AppComponent {
   btnDisabled = false;
   arrayNgfor: string[] = ["Punto 1", "Punto 2", "Punto 3", "Punto 4"];
 
+  constructor() {
+    localStorage.setItem("id", "1234");
+  }
+
   toggleButton(){
     this.btnDisabled = !this.btnDisabled;
   }
